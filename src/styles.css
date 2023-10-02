@@ -1,4 +1,4 @@
-body {
-  font-family: Gothic, sans-serif;
-  background: #F0EBD8;
+@font-face {
+  font-family: 'Domine';
+  src: url('./assets/Domine-VariableFont_wght.ttf');
 }

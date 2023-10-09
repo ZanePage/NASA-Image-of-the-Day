@@ -1,0 +1,14 @@
+<div class="header-container">
+  <h1 class="title">NASA PICTURE OF THE DAY</h1>
+  <h2 class="date">{{date}}</h2>
+</div>
+<div class="img-container">
+  <img *ngIf="this.media_type=='image'" [src]="safeUrl" class="iotd" alt="IMAGE OF THE DAY" />
+  <iframe *ngIf="this.media_type=='video'" [src]="safeUrl" class="iotd" frameborder="0" allowfullscreen></iframe>
+  <div class="text">
+    <h3>{{title_img}}</h3>
+    <p class="copy">Copyright: {{copyright}}</p>
+    <p>{{explanation}}</p>
+    <a href="/"><button>Today's Pic</button></a>
+  </div>
+</div>

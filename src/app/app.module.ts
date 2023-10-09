@@ -3,14 +3,22 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from  '@angular/common/http';
 
 import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
+import { TodayComponent } from './today/today.component';
+import { YesterdayComponent } from './yesterday/yesterday.component';
+import { AnyComponent } from './any/any.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TodayComponent,
+    YesterdayComponent,
+    AnyComponent
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

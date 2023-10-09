@@ -406,6 +406,17 @@
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+  .help-container {
+    padding: 1rem;
+    margin-right: 1rem;
+    border: solid white;
+    background: black;
+    color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+
   .header-container {
     font-family: Domine;
     margin: 1rem;

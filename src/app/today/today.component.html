@@ -12,3 +12,9 @@
     <a href="/yesterday"><button class="button">Yesterday's Pic</button></a>
   </div>
 </div>
+<div *ngIf="popup" class="help-container">
+    <p>You can easily look up any NASA Picture of the Day if you have the date.<br />
+    1. Make sure any text after base URL is gone(remove "/yesterday" or "/" + any previous date entered) <br />
+    2. Then add "/" to the URL and type a date in the form of YYYY-MM-DD i.e. 2022-09-01</p>
+  <button (click)="closePopUp()">close</button>
+</div>

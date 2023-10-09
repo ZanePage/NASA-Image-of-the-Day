@@ -17,6 +17,8 @@ export class TodayComponent implements OnInit {
   media_type: string = "";
   title_img: string = "";
 
+  popup: boolean = true;
+
   constructor(private api: NasaApiService, private _sanitizer: DomSanitizer) { }
 
   ngOnInit() {
@@ -32,6 +34,10 @@ export class TodayComponent implements OnInit {
       },
       (error) => { console.log(error); }
     );
+  }
+
+  closePopUp() {
+    this.popup = false;
   }
 
 
